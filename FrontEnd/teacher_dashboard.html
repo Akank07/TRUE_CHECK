@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Dashboard</title>
+
+    <link rel="stylesheet" href="css/teacher.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>Teacher Dashboard</h1>
+
+        <button id="logoutBtn">Logout</button>
+
+    </div>
+
+    <div class="card">
+
+        <h2 id="welcome"></h2>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Create Attendance Session</h2>
+
+        <input type="number" id="subjectId" placeholder="Subject ID">
+
+        <input type="number" id="classroomId" placeholder="Classroom ID">
+
+        <input type="datetime-local" id="startTime">
+
+        <input type="datetime-local" id="endTime">
+
+        <button id="createBtn">
+            Create Session
+        </button>
+
+        <br><br>
+
+        <img id="qrImage" width="220">
+
+        <h3 id="sessionCode"></h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Active Sessions</h2>
+
+        <table>
+
+            <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>Subject</th>
+                <th>Room</th>
+                <th>Code</th>
+                <th>Action</th>
+                <th>Attendance</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody id="sessionBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Session Attendance</h2>
+
+        <table>
+
+            <thead>
+
+            <tr>
+
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Time</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody id="attendanceBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/teacher.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="css/student.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1>Student Dashboard</h1>
+
+            <button id="logoutBtn">Logout</button>
+
+        </div>
+
+        <div class="card">
+
+            <h2 id="welcome"></h2>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Mark Attendance</h2>
+
+            <button onclick="window.location.href='attendance.html'">
+                Scan QR & Mark Attendance
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Attendance History</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Subject</th>
+
+                        <th>Status</th>
+
+                        <th>Date</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="historyBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="js/student.js"></script>
+
+</body>
+
+</html>

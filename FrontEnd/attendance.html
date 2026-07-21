@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueCheck - Attendance</title>
+
+    <link rel="stylesheet" href="css/attendance.css">
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>TrueCheck</h1>
+
+    <div class="card">
+
+        <h2>Scan Attendance QR</h2>
+
+        <div id="reader"></div>
+
+        <input
+            type="text"
+            id="sessionCode"
+            placeholder="Session Code"
+            readonly
+        >
+
+        <button id="scanBtn">
+            Start Scanner
+        </button>
+
+        <button id="markAttendanceBtn">
+            Mark Attendance
+        </button>
+
+        <p id="status"></p>
+
+    </div>
+
+</div>
+
+<script src="js/qrScanner.js"></script>
+<script src="js/attendance.js"></script>
+
+</body>
+</html>
